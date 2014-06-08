@@ -1,0 +1,12 @@
+
+# Individual files
+##################
+
+package.json
+gruntfile.json
+
+# package dependencies
+######################
+
+node_modules/
+.sass-cache/
