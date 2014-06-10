@@ -9,12 +9,12 @@
 
 $color1: #ffffff; //white
 $color2: #000000; //black
-$color3: #53ff00; //green
-$color4: #7eef3c; //accent light green
-$color5: #009999; //teal
+$color3: #73df00; //green
+$color4: #4ecf3c; //accent light green
+$color5: #007777; //teal
 $color6: #606060; //dark grey
 $color7: #cccccc; //light grey
-$color8: #00cc00; //accent dark green
+$color8: #00bb00; //accent dark green
 
 
 
@@ -94,16 +94,25 @@ h1 {
   font-family: $font1;
   color: $color6;
   font-size: $size2;
+  @media #{$mobile} {
+    font-size: $size2 * 0.6;
+  }
 }
 
 h2 {
-  font-family: $font1;
+  font-family: $font2;
   font-size: $size3;
+  @media #{$mobile} {
+    font-size: $size3 * 0.6;
+  }
 }
 
 p, ul {
   font-family: $font2;
   font-size: $size4;
+  @media #{$mobile} {
+    font-size: $size4 * 0.7;
+  }
 }
 
 a {
@@ -123,6 +132,9 @@ ul {
 
 li {
   margin-left: 1em;
+  @media #{$mobile} {
+    margin-left: 1.1em;
+  }
 }
 
 
@@ -141,16 +153,20 @@ body {
   position: absolute;
   padding: 0;
   margin: 0;
+  background-color: $color1;
 }
 
 header {
   width: 100%;
   background-color: $color3;
-  position: relative;
+  position: fixed;
   top: 0;
   display: block;
   height: 6em;
   box-shadow: 0 4px 2px #888888;
+  @media #{$mobile} {
+    height: 3em;
+  }
 }
 
 header h1 {
@@ -167,18 +183,27 @@ header h1 {
   @media #{$tablet2} {
     width: $width3;
   }
+  @media #{$mobile} {
+    width: $width4;
+    font-size: $size1 * 0.6;
+  }
 }
 
 header h1:hover {
   cursor: default;
 }
 
-.headerbar {
+#headerbar {
   background-color: $color4;
   width: 100%;
   position: absolute;
   bottom: 0;
   height: 1.5em;
+  @media #{$mobile} {
+    top:0;
+    //display: block;
+    visibility: hidden;
+  }
 }
 
 nav {
@@ -194,6 +219,10 @@ nav {
   @media #{$tablet2} {
     width: $width3;
   }
+  @media #{$mobile} {
+    width: 100%;
+    height: auto;
+  }
 }
 
 nav a{
@@ -204,6 +233,11 @@ nav a{
   font-weight: bold;
   //text-size: 1.5em;
   margin-top: 0.2em;
+  @media #{$mobile} {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 nav a:hover {
@@ -213,13 +247,19 @@ nav a:hover {
 
 main {
   width: $width1;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8em;
   @media #{$tablet1} {
     width: $width2;
     //transition: 0.3s;
   }
   @media #{$tablet2} {
     width: $width3;
+  }
+  @media #{$mobile} {
+    width: $width4;
+    margin-top: 5em;
   }
 }
 
