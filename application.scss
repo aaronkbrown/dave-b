@@ -12,7 +12,7 @@ $color2: #000000; //black
 $color3: #53ff00; //green
 $color4: #7eef3c; //accent light green
 $color5: #009999; //teal
-$color6: #555555; //dark grey
+$color6: #606060; //dark grey
 $color7: #cccccc; //light grey
 $color8: #00cc00; //accent dark green
 
@@ -71,6 +71,13 @@ $width4: 240px;
 $font1: 'arvo', serif;
 $font2: 'lato', sans-serif;
 
+$size1: 2em;
+$size2: 1.7em;
+$size3: 1.4em;
+$size4: 1.2em;
+$size5: 1em;
+$size6: 0.8em;
+
 
 
 
@@ -85,20 +92,29 @@ $font2: 'lato', sans-serif;
 
 h1 {
   font-family: $font1;
+  color: $color6;
+  font-size: $size2;
 }
 
 h2 {
   font-family: $font1;
+  font-size: $size3;
 }
 
 p, ul {
   font-family: $font2;
+  font-size: $size4;
 }
 
 a {
   font-family: $font2;
   text-decoration: none;
   color: $color7;
+}
+
+a:hover {
+  color: $color5;
+  transition: 0.3s;
 }
 
 ul {
@@ -142,7 +158,19 @@ header h1 {
   margin: 0 auto;
   padding-top: 0.6em;
   color: $color1;
+  font-size: $size1;
+  text-align: left;
   text-shadow:2px 2px $color6;
+  @media #{$tablet1} {
+    width: $width2;
+  }
+  @media #{$tablet2} {
+    width: $width3;
+  }
+}
+
+header h1:hover {
+  cursor: default;
 }
 
 .headerbar {
@@ -159,7 +187,13 @@ nav {
   margin-left: auto;
   margin-right: auto;
   height: 1.5em;
-  //margin-top: 1.05em;
+  text-align: center;
+  @media #{$tablet1} {
+    width: $width2;
+  }
+  @media #{$tablet2} {
+    width: $width3;
+  }
 }
 
 nav a{
@@ -167,11 +201,26 @@ nav a{
   display: inline-block;
   text-align: center;
   width: 24%;
+  font-weight: bold;
+  //text-size: 1.5em;
+  margin-top: 0.2em;
+}
+
+nav a:hover {
+  color: $color5;
+  transition: 0.3s;
 }
 
 main {
   width: $width1;
   margin: 0 auto;
+  @media #{$tablet1} {
+    width: $width2;
+    //transition: 0.3s;
+  }
+  @media #{$tablet2} {
+    width: $width3;
+  }
 }
 
 article {
