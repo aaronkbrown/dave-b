@@ -159,13 +159,34 @@ body {
 header {
   width: 100%;
   background-color: $color3;
-  position: fixed;
+  position: relative;
   top: 0;
   display: block;
   height: 6em;
   box-shadow: 0 4px 2px #888888;
   @media #{$mobile} {
+    position: fixed;
     height: 3em;
+    transition: 0.3s;
+  }
+}
+
+header.menu {
+  @media #{$mobile} {
+    height: 8em;
+    transition: 0.3s;
+  }
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+  //background-color:red;
+  @media #{$mobile} {
+    position: absolute;
+    height: 3em;
+    width: 100%;
+    bottom: 0;
   }
 }
 
@@ -186,6 +207,8 @@ header h1 {
   @media #{$mobile} {
     width: $width4;
     font-size: $size1 * 0.6;
+    //margin-left: auto;
+    //margin-right: auto;
   }
 }
 
@@ -200,9 +223,25 @@ header h1:hover {
   bottom: 0;
   height: 1.5em;
   @media #{$mobile} {
-    top:0;
-    //display: block;
-    visibility: hidden;
+    top:-5em;
+    transition: 0.3s;
+  }
+}
+
+#headerbar.menuShow {
+  top: 0;
+  transition: 0.3s;
+}
+
+#clickDiv {
+  width: 100%;
+  height: 3em;
+  position: absolute;
+  //background-color: red;
+  bottom:0;
+  display: none;
+  @media #{$mobile} {
+    display: block;
   }
 }
 
@@ -241,7 +280,7 @@ nav a{
 }
 
 nav a:hover {
-  color: $color5;
+  color: $color1;
   transition: 0.3s;
 }
 
@@ -249,7 +288,7 @@ main {
   width: $width1;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8em;
+  margin-top: 0;
   @media #{$tablet1} {
     width: $width2;
     //transition: 0.3s;
