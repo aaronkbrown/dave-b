@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'arvo';
+  src: url("../style/fonts/Arvo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'arvobold';
+  src: url("../style/fonts/Arvo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../style/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latoitalic';
+  src: url("../style/fonts/Lato-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latobold';
+  src: url("../style/fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+h1 {
+  font-family: "arvo", serif; }
+
+h2 {
+  font-family: "arvo", serif; }
+
+p, ul {
+  font-family: "lato", sans-serif; }
