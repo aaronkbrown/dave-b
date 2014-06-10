@@ -1,19 +1,35 @@
 
+@import "reset";
+
 // VARIABLES
+
+
 
 // Colors
 
-$color1: #ffffff;
-$color2: #000000;
-$color3: #53ff00;
-$color4: #7eef3c;
-$color5: #009999;
+$color1: #ffffff; //white
+$color2: #000000; //black
+$color3: #53ff00; //green
+$color4: #7eef3c; //accent light green
+$color5: #009999; //teal
+$color6: #555555; //dark grey
+$color7: #cccccc; //light grey
+$color8: #00cc00; //accent dark green
+
+
 
 // Media queries
 
 $tablet1: "only screen and (min-width: 768px) and (max-width: 959px)";
 $tablet2: "only screen and (min-width: 480px) and (max-width: 767px)";
 $mobile: "only screen and (max-width: 479px)";
+
+$width1: 800px;
+$width2: 700px;
+$width3: 420px;
+$width4: 240px;
+
+
 
 // Typography
 
@@ -55,6 +71,18 @@ $mobile: "only screen and (max-width: 479px)";
 $font1: 'arvo', serif;
 $font2: 'lato', sans-serif;
 
+
+
+
+
+
+
+// RULES
+
+
+
+// Typography
+
 h1 {
   font-family: $font1;
 }
@@ -65,5 +93,88 @@ h2 {
 
 p, ul {
   font-family: $font2;
+}
+
+a {
+  font-family: $font2;
+  text-decoration: none;
+  color: $color7;
+}
+
+ul {
+  list-style: disc outside none;
+}
+
+li {
+  margin-left: 1em;
+}
+
+
+
+// Block Elements
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: $color3;
+  position: relative;
+  top: 0;
+  display: block;
+  height: 6em;
+  box-shadow: 0 4px 2px #888888;
+}
+
+header h1 {
+  width: $width1;
+  margin: 0 auto;
+  padding-top: 0.6em;
+  color: $color1;
+  text-shadow:2px 2px $color6;
+}
+
+.headerbar {
+  background-color: $color4;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 1.5em;
+}
+
+nav {
+  background-color: $color8;
+  width: $width1;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1.5em;
+  //margin-top: 1.05em;
+}
+
+nav a{
+  color: $color6;
+  display: inline-block;
+  text-align: center;
+  width: 24%;
+}
+
+main {
+  width: $width1;
+  margin: 0 auto;
+}
+
+article {
+  margin-top: 2em;
 }
 
