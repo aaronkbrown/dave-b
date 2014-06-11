@@ -118,11 +118,11 @@ p, ul {
 a {
   font-family: $font2;
   text-decoration: none;
-  color: $color7;
+  color: $color5;
 }
 
 a:hover {
-  color: $color5;
+  color: $color7;
   transition: 0.3s;
 }
 
@@ -216,6 +216,7 @@ header h1:hover {
   cursor: default;
 }
 
+// Menu is hidden in mobile view
 #headerbar {
   background-color: $color4;
   width: 100%;
@@ -228,9 +229,12 @@ header h1:hover {
   }
 }
 
+// Menu is dropped down in mobile view
 #headerbar.menuShow {
-  top: 0;
-  transition: 0.3s;
+  @media #{$mobile} {
+    top: 0;
+    transition: 0.3s;
+  }
 }
 
 #clickDiv {
@@ -304,5 +308,29 @@ main {
 
 article {
   margin-top: 2em;
+}
+
+figure {
+  background-color: white;
+  width: 300px;
+  border: 2px solid $color7;
+  @media #{$tablet2} {
+    width: 200px;
+  }
+  @media #{$mobile} {
+    width: 150px;
+  }
+}
+
+.linkblock {
+  width: 50%;
+  background-color: $color3;
+  float: left;
+  @media #{$tablet2} {
+    width: 100%;
+  }
+  @media #{$mobile} {
+    width: 100%;
+  }
 }
 

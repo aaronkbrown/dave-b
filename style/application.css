@@ -151,10 +151,10 @@ p, ul {
 a {
   font-family: "lato", sans-serif;
   text-decoration: none;
-  color: #cccccc; }
+  color: #007777; }
 
 a:hover {
-  color: #007777;
+  color: #cccccc;
   transition: 0.3s; }
 
 ul {
@@ -241,9 +241,10 @@ header h1:hover {
       top: -5em;
       transition: 0.3s; } }
 
-#headerbar.menuShow {
-  top: 0;
-  transition: 0.3s; }
+@media only screen and (max-width: 479px) {
+  #headerbar.menuShow {
+    top: 0;
+    transition: 0.3s; } }
 
 #clickDiv {
   width: 100%;
@@ -308,3 +309,25 @@ main {
 
 article {
   margin-top: 2em; }
+
+figure {
+  background-color: white;
+  width: 300px;
+  border: 2px solid #cccccc; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    figure {
+      width: 200px; } }
+  @media only screen and (max-width: 479px) {
+    figure {
+      width: 150px; } }
+
+.linkblock {
+  width: 50%;
+  background-color: #73df00;
+  float: left; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .linkblock {
+      width: 100%; } }
+  @media only screen and (max-width: 479px) {
+    .linkblock {
+      width: 100%; } }
