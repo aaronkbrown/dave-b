@@ -24,8 +24,8 @@ $tablet1: "only screen and (min-width: 768px) and (max-width: 959px)";
 $tablet2: "only screen and (min-width: 480px) and (max-width: 767px)";
 $mobile: "only screen and (max-width: 479px)";
 
-$width1: 800px;
-$width2: 700px;
+$width1: 750px;
+$width2: 600px;
 $width3: 420px;
 $width4: 240px;
 
@@ -66,6 +66,35 @@ $width4: 240px;
   src: url('../style/fonts/Lato-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-gd3zza');
+  src:url('fonts/icomoon.eot?#iefix-gd3zza') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-gd3zza') format('woff'),
+    url('fonts/icomoon.ttf?-gd3zza') format('truetype'),
+    url('fonts/icomoon.svg?-gd3zza#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up:before {
+  content: "\e600";
 }
 
 $font1: 'arvo', serif;
@@ -137,6 +166,39 @@ li {
   }
 }
 
+.bumpreturn {
+  font-size: $size1;
+  position: fixed;
+  right: 1.5em;
+  bottom: 2em;
+  @media #{$tablet2} {
+    visibility: hidden;
+    //font-size: $size2;
+    //right: 2em;
+    //top: 0.4em;
+    //bottom: auto;
+    //transition: 0.3s;
+  }
+  @media #{$mobile} {
+    visibility: hidden;
+    //font-size: $size2;
+    //right: 1em;
+    //top: 0.4em;
+    //bottom: auto;
+    //transition: 0.3s;
+  }
+}
+
+.bumptop {
+  font-size: $size2;
+  position: absolute;
+  right: 2em;
+  top: 0.4em;
+  @media #{$mobile} {
+    right: 1em;
+  }
+}
+
 
 
 // Block Elements
@@ -164,6 +226,11 @@ header {
   display: block;
   height: 6em;
   box-shadow: 0 4px 2px #888888;
+  @media #{$tablet2} {
+    position: fixed;
+    height: 3em;
+    transition: 0.3s;
+  }
   @media #{$mobile} {
     position: fixed;
     height: 3em;
@@ -172,6 +239,10 @@ header {
 }
 
 header.menu {
+  @media #{$tablet2} {
+    height: 8em;
+    transition: 0.3s;
+  }
   @media #{$mobile} {
     height: 8em;
     transition: 0.3s;
@@ -182,6 +253,12 @@ header.menu {
   margin: 0;
   padding: 0;
   //background-color:red;
+  @media #{$tablet2} {
+    position: absolute;
+    height: 3em;
+    width: 100%;
+    bottom: 0;
+  }
   @media #{$mobile} {
     position: absolute;
     height: 3em;
@@ -203,6 +280,7 @@ header h1 {
   }
   @media #{$tablet2} {
     width: $width3;
+    font-size: $size1 * 0.6;
   }
   @media #{$mobile} {
     width: $width4;
@@ -223,6 +301,10 @@ header h1:hover {
   position: absolute;
   bottom: 0;
   height: 1.5em;
+  @media #{$tablet2} {
+    top: -5em;
+    transition: 0.3s;
+  }
   @media #{$mobile} {
     top:-5em;
     transition: 0.3s;
@@ -231,6 +313,10 @@ header h1:hover {
 
 // Menu is dropped down in mobile view
 #headerbar.menuShow {
+  @media #{$tablet2} {
+    top: 0;
+    transition: 0.3s;
+  }
   @media #{$mobile} {
     top: 0;
     transition: 0.3s;
@@ -244,6 +330,9 @@ header h1:hover {
   //background-color: red;
   bottom:0;
   display: none;
+  @media #{$tablet2} {
+    display: block;
+  }
   @media #{$mobile} {
     display: block;
   }
@@ -260,7 +349,8 @@ nav {
     width: $width2;
   }
   @media #{$tablet2} {
-    width: $width3;
+    width: 100%;
+    height: auto;
   }
   @media #{$mobile} {
     width: 100%;
@@ -276,6 +366,11 @@ nav a{
   font-weight: bold;
   //text-size: 1.5em;
   margin-top: 0.2em;
+  @media #{$tablet2} {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
   @media #{$mobile} {
     display: block;
     width: 100%;
@@ -293,12 +388,14 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
+  //background-color: red;
   @media #{$tablet1} {
     width: $width2;
     //transition: 0.3s;
   }
   @media #{$tablet2} {
     width: $width3;
+    margin-top: 5em;
   }
   @media #{$mobile} {
     width: $width4;

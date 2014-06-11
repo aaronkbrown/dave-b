@@ -126,6 +126,27 @@ mark {
   src: url("../style/fonts/Lato-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-gd3zza");
+  src: url("fonts/icomoon.eot?#iefix-gd3zza") format("embedded-opentype"), url("fonts/icomoon.woff?-gd3zza") format("woff"), url("fonts/icomoon.ttf?-gd3zza") format("truetype"), url("fonts/icomoon.svg?-gd3zza#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-up:before {
+  content: "\e600"; }
+
 h1 {
   font-family: "arvo", serif;
   color: #606060;
@@ -166,6 +187,27 @@ li {
     li {
       margin-left: 1.1em; } }
 
+.bumpreturn {
+  font-size: 2em;
+  position: fixed;
+  right: 1.5em;
+  bottom: 2em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .bumpreturn {
+      visibility: hidden; } }
+  @media only screen and (max-width: 479px) {
+    .bumpreturn {
+      visibility: hidden; } }
+
+.bumptop {
+  font-size: 1.7em;
+  position: absolute;
+  right: 2em;
+  top: 0.4em; }
+  @media only screen and (max-width: 479px) {
+    .bumptop {
+      right: 1em; } }
+
 html {
   height: 100%;
   padding: 0;
@@ -187,12 +229,21 @@ header {
   display: block;
   height: 6em;
   box-shadow: 0 4px 2px #888888; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    header {
+      position: fixed;
+      height: 3em;
+      transition: 0.3s; } }
   @media only screen and (max-width: 479px) {
     header {
       position: fixed;
       height: 3em;
       transition: 0.3s; } }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header.menu {
+    height: 8em;
+    transition: 0.3s; } }
 @media only screen and (max-width: 479px) {
   header.menu {
     height: 8em;
@@ -201,6 +252,12 @@ header {
 .name {
   margin: 0;
   padding: 0; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .name {
+      position: absolute;
+      height: 3em;
+      width: 100%;
+      bottom: 0; } }
   @media only screen and (max-width: 479px) {
     .name {
       position: absolute;
@@ -209,7 +266,7 @@ header {
       bottom: 0; } }
 
 header h1 {
-  width: 800px;
+  width: 750px;
   margin: 0 auto;
   padding-top: 0.6em;
   color: white;
@@ -218,10 +275,11 @@ header h1 {
   text-shadow: 2px 2px #606060; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     header h1 {
-      width: 700px; } }
+      width: 600px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     header h1 {
-      width: 420px; } }
+      width: 420px;
+      font-size: 1.2em; } }
   @media only screen and (max-width: 479px) {
     header h1 {
       width: 240px;
@@ -236,11 +294,19 @@ header h1:hover {
   position: absolute;
   bottom: 0;
   height: 1.5em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #headerbar {
+      top: -5em;
+      transition: 0.3s; } }
   @media only screen and (max-width: 479px) {
     #headerbar {
       top: -5em;
       transition: 0.3s; } }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #headerbar.menuShow {
+    top: 0;
+    transition: 0.3s; } }
 @media only screen and (max-width: 479px) {
   #headerbar.menuShow {
     top: 0;
@@ -252,23 +318,27 @@ header h1:hover {
   position: absolute;
   bottom: 0;
   display: none; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #clickDiv {
+      display: block; } }
   @media only screen and (max-width: 479px) {
     #clickDiv {
       display: block; } }
 
 nav {
   background-color: #00bb00;
-  width: 800px;
+  width: 750px;
   margin-left: auto;
   margin-right: auto;
   height: 1.5em;
   text-align: center; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     nav {
-      width: 700px; } }
+      width: 600px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     nav {
-      width: 420px; } }
+      width: 100%;
+      height: auto; } }
   @media only screen and (max-width: 479px) {
     nav {
       width: 100%;
@@ -281,6 +351,11 @@ nav a {
   width: 24%;
   font-weight: bold;
   margin-top: 0.2em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    nav a {
+      display: block;
+      width: 100%;
+      margin: 0; } }
   @media only screen and (max-width: 479px) {
     nav a {
       display: block;
@@ -292,16 +367,17 @@ nav a:hover {
   transition: 0.3s; }
 
 main {
-  width: 800px;
+  width: 750px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     main {
-      width: 700px; } }
+      width: 600px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     main {
-      width: 420px; } }
+      width: 420px;
+      margin-top: 5em; } }
   @media only screen and (max-width: 479px) {
     main {
       width: 240px;

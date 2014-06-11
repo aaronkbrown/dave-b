@@ -4,6 +4,7 @@ function clickMenu(){
     //alert("Clicked");
     $("#headerClick").toggleClass("menu");
     $("#headerbar").toggleClass("menuShow");
+    //$("#bumpreturn").toggleClass("bumpheader");
   });
 }
 //alert("loaded");
