@@ -195,6 +195,10 @@ li {
     li {
       margin-left: 1.1em; } }
 
+small {
+  font-family: "lato", sans-serif;
+  color: #606060; }
+
 .bumpreturn {
   font-size: 2em;
   position: fixed;
@@ -482,3 +486,29 @@ figure {
   clear: both;
   height: auto;
   margin: 0; }
+
+footer {
+  width: 100%;
+  height: 5em;
+  margin-top: 2em;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: #cccccc;
+  border-top: 1px solid #606060; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    footer {
+      height: 3em; } }
+  @media only screen and (max-width: 479px) {
+    footer {
+      height: 3em; } }
+
+footer small {
+  margin-top: 2em;
+  display: block; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    footer small {
+      margin-top: 1em; } }
+  @media only screen and (max-width: 479px) {
+    footer small {
+      margin-top: 1em; } }
