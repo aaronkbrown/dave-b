@@ -123,6 +123,8 @@ h1 {
   font-family: $font1;
   color: $color6;
   font-size: $size2;
+  margin-top: .5em;
+  margin-bottom: .5em;
   @media #{$mobile} {
     font-size: $size2 * 0.6;
   }
@@ -131,6 +133,8 @@ h1 {
 h2 {
   font-family: $font2;
   font-size: $size3;
+  margin-top: .5em;
+  margin-bottom: .5em;
   @media #{$mobile} {
     font-size: $size3 * 0.6;
   }
@@ -142,6 +146,11 @@ p, ul {
   @media #{$mobile} {
     font-size: $size4 * 0.7;
   }
+}
+
+p {
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 a {
@@ -428,7 +437,8 @@ figure {
   //height:12em;
   //background-color: $color7;
   //vertical-align: middle;
-  border: 1px solid $color7;
+  //border: 1px solid $color7;
+  margin-top: 1em;
   float: left;
   @media #{$tablet2} {
     width: 100%;
@@ -513,5 +523,6 @@ figure {
 .linkblock p {
   clear: both;
   height: auto;
+  margin: 0;
 }
 
