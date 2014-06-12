@@ -407,3 +407,69 @@ figure {
   @media only screen and (max-width: 479px) {
     .linkblock {
       width: 100%; } }
+
+.linkblock div {
+  height: 50%;
+  width: 60%;
+  float: right; }
+  @media only screen and (max-width: 479px) {
+    .linkblock div {
+      width: 55%; } }
+
+.link1 {
+  margin-top: 1.7em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link1 {
+      margin-top: 1.275em; } }
+  @media only screen and (max-width: 479px) {
+    .link1 {
+      margin-top: 0.85em; } }
+
+.link2 {
+  margin-top: 3.5em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link2 {
+      margin-top: 2.625em; } }
+  @media only screen and (max-width: 479px) {
+    .link2 {
+      margin-top: 1.225em; } }
+
+.link3 {
+  margin-top: 2.3em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link3 {
+      margin-top: 1.725em; } }
+  @media only screen and (max-width: 479px) {
+    .link3 {
+      margin-top: 0.805em; } }
+
+.link4 {
+  margin-top: 3.8em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link4 {
+      margin-top: 2.85em; } }
+  @media only screen and (max-width: 479px) {
+    .link4 {
+      margin-top: 1.33em; } }
+
+.link5 {
+  margin-top: 3em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link5 {
+      margin-top: 2.25em; } }
+  @media only screen and (max-width: 479px) {
+    .link5 {
+      margin-top: 1.5em; } }
+
+.link6 {
+  margin-top: 3em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link6 {
+      margin-top: 2.25em; } }
+  @media only screen and (max-width: 479px) {
+    .link6 {
+      margin-top: 1.5em; } }
+
+.linkblock p {
+  clear: both;
+  height: auto; }

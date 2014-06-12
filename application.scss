@@ -438,7 +438,80 @@ figure {
   }
 }
 
+.linkblock div {
+  height: 50%;
+  width: 60%;
+  //margin-top: 2em;
+  //background-color:red;
+  float: right;
+  @media #{$mobile} {
+    //margin-top: 1em;
+    width: 55%;
+  }
+}
+
+.link1 {
+  margin-top: 1.7em;
+  @media #{$tablet2} {
+    margin-top: 1.7em * 0.75;
+  }
+  @media #{$mobile} {
+    margin-top: 1.7em * .5;
+  }
+}
+
+.link2 {
+  margin-top: 3.5em;
+  @media #{$tablet2} {
+    margin-top: 3.5em * .75;
+  }
+  @media #{$mobile} {
+    margin-top: 3.5em * .35;
+  }
+}
+
+.link3 {
+  margin-top: 2.3em;
+  @media #{$tablet2} {
+    margin-top: 2.3em * .75;
+  }
+  @media #{$mobile} {
+    margin-top: 2.3em * .35;
+  }
+}
+
+.link4 {
+  margin-top: 3.8em;
+  @media #{$tablet2} {
+    margin-top: 3.8em * .75;
+  }
+  @media #{$mobile} {
+    margin-top: 3.8em * .35;
+  }
+}
+
+.link5 {
+  margin-top: 3em;
+  @media #{$tablet2} {
+    margin-top: 3em * .75;
+  }
+  @media #{$mobile} {
+    margin-top: 3em * .5;
+  }
+}
+
+.link6 {
+  margin-top: 3em;
+  @media #{$tablet2} {
+    margin-top: 3em * .75;
+  }
+  @media #{$mobile} {
+    margin-top: 3em * .5;
+  }
+}
+
 .linkblock p {
-  
+  clear: both;
+  height: auto;
 }
 
