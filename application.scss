@@ -142,15 +142,19 @@ h2 {
 
 p, ul {
   font-family: $font2;
-  font-size: $size4;
+  //font-size: $size4;
   @media #{$mobile} {
-    font-size: $size4 * 0.7;
+    //font-size: $size4 * 0.7;
   }
 }
 
 p {
   margin-top: .2em;
   margin-bottom: .2em;
+  font-size: $size4;
+  @media #{$mobile} {
+    font-size: $size4 * 0.7;
+  }
 }
 
 a {
@@ -166,6 +170,10 @@ a:hover {
 
 ul {
   list-style: disc outside none;
+  font-size: $size5;
+  @media #{$mobile} {
+    font-size: $size5 * 0.7;
+  }
 }
 
 li {
@@ -216,6 +224,25 @@ small {
 
 
 // Block Elements
+
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
 
 html {
   height: 100%;
@@ -419,17 +446,62 @@ main {
 
 article {
   margin-top: 2em;
+  //background-color: red;
+}
+
+article h1 {
+  padding: 0.5em;
+  background-color: $color7;
+  border: 1px solid $color6;
 }
 
 figure {
   background-color: white;
-  width: 200px;
-  float: left;
+}
+
+#about p {
+  display: block;
+  width: 430px;
+  float: right;
+  @media #{$tablet1} {
+    width: 350px;
+    font-size: $size4 * 0.8;
+  }
   @media #{$tablet2} {
-    width: 150px;
+    width: 100%;
+    float: none;
+    margin-top: 2em;
+    font-size: $size4 * 0.8;
   }
   @media #{$mobile} {
-    width: 100px;
+    width: 100%;
+    float: none;
+    margin-top: 2em;
+    font-size: $size4 * 0.6;
+  }
+}
+
+#about figure {
+  float: left;
+  width: 300px;
+  margin-top: 1.8em;
+  @media #{$tablet1} {
+    margin-top: 1.6em;
+    width: 230px;
+  }
+  @media #{$tablet2} {
+    float: none;
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media #{$mobile} {
+    float: none;
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -450,6 +522,17 @@ figure {
   }
   @media #{$mobile} {
     width: 100%;
+  }
+}
+
+#links figure {
+  width: 200px;
+  float: left;
+  @media #{$tablet2} {
+    width: 150px;
+  }
+  @media #{$mobile} {
+    width: 100px;
   }
 }
 

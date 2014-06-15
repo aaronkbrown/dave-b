@@ -167,15 +167,15 @@ h2 {
       font-size: 0.84em; } }
 
 p, ul {
-  font-family: "lato", sans-serif;
-  font-size: 1.2em; }
-  @media only screen and (max-width: 479px) {
-    p, ul {
-      font-size: 0.84em; } }
+  font-family: "lato", sans-serif; }
 
 p {
   margin-top: .2em;
-  margin-bottom: .2em; }
+  margin-bottom: .2em;
+  font-size: 1.2em; }
+  @media only screen and (max-width: 479px) {
+    p {
+      font-size: 0.84em; } }
 
 a {
   font-family: "lato", sans-serif;
@@ -187,7 +187,11 @@ a:hover {
   transition: 0.3s; }
 
 ul {
-  list-style: disc outside none; }
+  list-style: disc outside none;
+  font-size: 1em; }
+  @media only screen and (max-width: 479px) {
+    ul {
+      font-size: 0.7em; } }
 
 li {
   margin-left: 1em; }
@@ -219,6 +223,23 @@ small {
   @media only screen and (max-width: 479px) {
     .bumptop {
       right: 1em; } }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
 
 html {
   height: 100%;
@@ -398,16 +419,57 @@ main {
 article {
   margin-top: 2em; }
 
+article h1 {
+  padding: 0.5em;
+  background-color: #cccccc;
+  border: 1px solid #606060; }
+
 figure {
-  background-color: white;
-  width: 200px;
-  float: left; }
+  background-color: white; }
+
+#about p {
+  display: block;
+  width: 430px;
+  float: right; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    #about p {
+      width: 350px;
+      font-size: 0.96em; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    figure {
-      width: 150px; } }
+    #about p {
+      width: 100%;
+      float: none;
+      margin-top: 2em;
+      font-size: 0.96em; } }
   @media only screen and (max-width: 479px) {
-    figure {
-      width: 100px; } }
+    #about p {
+      width: 100%;
+      float: none;
+      margin-top: 2em;
+      font-size: 0.72em; } }
+
+#about figure {
+  float: left;
+  width: 300px;
+  margin-top: 1.8em; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    #about figure {
+      margin-top: 1.6em;
+      width: 230px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #about figure {
+      float: none;
+      display: block;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media only screen and (max-width: 479px) {
+    #about figure {
+      float: none;
+      display: block;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .linkblock {
   width: 100%;
@@ -419,6 +481,16 @@ figure {
   @media only screen and (max-width: 479px) {
     .linkblock {
       width: 100%; } }
+
+#links figure {
+  width: 200px;
+  float: left; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #links figure {
+      width: 150px; } }
+  @media only screen and (max-width: 479px) {
+    #links figure {
+      width: 100px; } }
 
 .linkblock div {
   height: 50%;
