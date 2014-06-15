@@ -199,6 +199,27 @@ li {
     li {
       margin-left: 1.1em; } }
 
+.contact-info {
+  display: block;
+  width: 40%;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: #e0e0e0; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .contact-info {
+      width: 50%; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .contact-info {
+      width: 50%;
+      font-size: 0.96em; } }
+  @media only screen and (max-width: 479px) {
+    .contact-info {
+      width: 70%;
+      font-size: 0.72em; } }
+
 small {
   font-family: "lato", sans-serif;
   color: #606060; }
@@ -417,12 +438,13 @@ main {
       margin-top: 5em; } }
 
 article {
-  margin-top: 2em; }
+  margin-top: 3em; }
 
 article h1 {
   padding: 0.5em;
   background-color: #cccccc;
-  border: 1px solid #606060; }
+  border: 1px solid #606060;
+  box-shadow: 0 4px 2px #888888; }
 
 figure {
   background-color: white; }

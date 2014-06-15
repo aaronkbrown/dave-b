@@ -15,6 +15,7 @@ $color5: #007777; //teal
 $color6: #606060; //dark grey
 $color7: #cccccc; //light grey
 $color8: #00bb00; //accent dark green
+$color9: #e0e0e0; //lightest grey
 
 
 
@@ -180,6 +181,28 @@ li {
   margin-left: 1em;
   @media #{$mobile} {
     margin-left: 1.1em;
+  }
+}
+
+.contact-info {
+  display: block;
+  width: 40%;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: $color9;
+  @media #{$tablet1} {
+    width: 50%;
+  }
+  @media #{$tablet2} {
+    width: 50%;
+    font-size: $size4 * 0.8;
+  }
+  @media #{$mobile} {
+    width: 70%;
+    font-size: $size4 * 0.6;
   }
 }
 
@@ -445,7 +468,7 @@ main {
 }
 
 article {
-  margin-top: 2em;
+  margin-top: 3em;
   //background-color: red;
 }
 
@@ -453,6 +476,7 @@ article h1 {
   padding: 0.5em;
   background-color: $color7;
   border: 1px solid $color6;
+  box-shadow: 0 4px 2px #888888;
 }
 
 figure {
