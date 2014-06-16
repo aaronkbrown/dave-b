@@ -192,6 +192,7 @@ li {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+  background-color: $color9;
 }
 
 .list-col li {
@@ -304,7 +305,8 @@ body {
 header {
   width: 100%;
   background-color: $color3;
-  position: relative;
+  //position: relative;
+  position: fixed;
   top: 0;
   display: block;
   height: 6em;
@@ -470,7 +472,7 @@ main {
   width: $width1;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 9em;
   //background-color: red;
   @media #{$tablet1} {
     width: $width2;
@@ -487,8 +489,19 @@ main {
 }
 
 article {
-  margin-top: 3em;
+  padding-top: 6em;
+  //margin-top: 3em;
   //background-color: red;
+  @media #{$tablet2} {
+    padding-top: 4em;
+  }
+  @media #{$mobile} {
+    padding-top: 4em;
+  }
+}
+
+#about {
+  padding-top: 0em;
 }
 
 article h1 {

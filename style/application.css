@@ -205,7 +205,8 @@ li {
 .list-col {
   columns: 2;
   -webkit-columns: 2;
-  -moz-columns: 2; }
+  -moz-columns: 2;
+  background-color: #e0e0e0; }
 
 .list-col li {
   width: 90%;
@@ -293,7 +294,7 @@ body {
 header {
   width: 100%;
   background-color: #73df00;
-  position: relative;
+  position: fixed;
   top: 0;
   display: block;
   height: 6em;
@@ -439,7 +440,7 @@ main {
   width: 750px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0; }
+  margin-top: 9em; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     main {
       width: 600px; } }
@@ -453,7 +454,16 @@ main {
       margin-top: 5em; } }
 
 article {
-  margin-top: 3em; }
+  padding-top: 6em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    article {
+      padding-top: 4em; } }
+  @media only screen and (max-width: 479px) {
+    article {
+      padding-top: 4em; } }
+
+#about {
+  padding-top: 0em; }
 
 article h1 {
   padding: 0.5em;
