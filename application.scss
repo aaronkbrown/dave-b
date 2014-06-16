@@ -500,6 +500,25 @@ article {
   }
 }
 
+.notice p {
+  display: block;
+  width: $width1;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background-color: $color7;
+  text-align: center;
+  @media #{$tablet1} {
+    width: $width2;
+  }
+  @media #{$tablet2} {
+    width: $width3;
+  }
+  @media #{$mobile} {
+    width: $width4;
+  }
+}
+
 #about {
   padding-top: 0em;
 }

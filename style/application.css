@@ -462,6 +462,24 @@ article {
     article {
       padding-top: 4em; } }
 
+.notice p {
+  display: block;
+  width: 750px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background-color: #cccccc;
+  text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .notice p {
+      width: 600px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .notice p {
+      width: 420px; } }
+  @media only screen and (max-width: 479px) {
+    .notice p {
+      width: 240px; } }
+
 #about {
   padding-top: 0em; }
 
