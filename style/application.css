@@ -199,6 +199,21 @@ li {
     li {
       margin-left: 1.1em; } }
 
+.ul-square {
+  list-style: square outside none; }
+
+.list-col {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2; }
+
+.list-col li {
+  width: 90%;
+  vertical-align: baseline;
+  display: inline-block;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em; }
+
 .contact-info {
   display: block;
   width: 40%;
@@ -492,6 +507,107 @@ figure {
       width: 150px;
       margin-left: auto;
       margin-right: auto; } }
+
+#resume section h1 {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: black;
+  font-size: 1.4em; }
+  @media only screen and (max-width: 479px) {
+    #resume section h1 {
+      font-size: 0.84em; } }
+
+#resume div {
+  background-color: #e0e0e0;
+  width: 750px;
+  margin: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    #resume div {
+      width: 600px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #resume div {
+      width: 420px; } }
+  @media only screen and (max-width: 479px) {
+    #resume div {
+      width: 240px; } }
+
+#resume div p, #resume div ul {
+  font-size: 1em;
+  margin: 0.5em;
+  width: 85%; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    #resume div p, #resume div ul {
+      font-size: 0.8em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #resume div p, #resume div ul {
+      font-size: 0.7em;
+      width: 75%; } }
+  @media only screen and (max-width: 479px) {
+    #resume div p, #resume div ul {
+      font-size: 0.6em;
+      width: 75%; } }
+
+date {
+  display: block;
+  width: 15%;
+  float: right;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: "lato", sans-serif; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    date {
+      font-size: 0.8em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    date {
+      width: 20%;
+      font-size: 0.7em; } }
+  @media only screen and (max-width: 479px) {
+    date {
+      width: 20%;
+      font-size: 0.6em; } }
+
+/*
+table {
+  text-align: left;
+  width: $width1;
+  vertical-align: top;
+  font-family: $font2;
+  font-size: $size5;
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    width: $width2;
+    font-size: $size5 * 0.8;
+  }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    width: $width3;
+    font-size: $size5 * 0.7;
+  }
+  @media only screen and (max-width: 479px) {
+    width: $width4;
+    font-size: $size5 * 0.5;
+  }
+}
+
+table div {
+  background-color: $color7;
+}
+
+tr {
+  background-color: $color7;
+}
+
+td {
+  //border: 1px solid black;
+  padding: 0.5em;
+}
+*/
+#resume h2 {
+  color: #606060;
+  font-size: 1.2em; }
+  @media only screen and (max-width: 479px) {
+    #resume h2 {
+      font-size: 0.72em; } }
 
 .linkblock {
   width: 100%;

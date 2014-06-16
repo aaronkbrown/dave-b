@@ -184,6 +184,25 @@ li {
   }
 }
 
+.ul-square {
+  list-style: square outside none;
+}
+
+.list-col {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.list-col li {
+  width: 90%;
+  vertical-align: baseline;
+  display: inline-block;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  //background-color: $color9;
+}
+
 .contact-info {
   display: block;
   width: 40%;
@@ -526,6 +545,115 @@ figure {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+#resume section h1 {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: $color2;
+  font-size: $size3;
+  @media #{$mobile} {
+    font-size: $size3 * 0.6;
+  }
+}
+
+#resume div {
+  background-color: $color9;
+  width: $width1;
+  //font-size: $size5;
+  margin: 0;
+  @media #{$tablet1} {
+    width: $width2;
+  }
+  @media #{$tablet2} {
+    width: $width3;
+  }
+  @media #{$mobile} {
+    width: $width4;
+  }
+}
+
+#resume div p, #resume div ul {
+  font-size: $size5;
+  margin: 0.5em;
+  width: 85%;
+  @media #{$tablet1} {
+    font-size: $size5 * 0.8;
+  }
+  @media #{$tablet2} {
+    font-size: $size5 * 0.7;
+    width: 75%;
+  }
+  @media #{$mobile} {
+    font-size: $size5 * 0.6;
+    width: 75%;
+  }
+}
+
+date {
+  display: block;
+  width: 15%;
+  float: right;
+  margin: 0.5em;
+  font-size: $size5;
+  font-family: $font2;
+  //vertical-align: baseline;
+  @media #{$tablet1} {
+    font-size: $size5 * 0.8;
+  }
+  @media #{$tablet2} {
+    width: 20%;
+    font-size: $size5 * 0.7;
+  }
+  @media #{$mobile} {
+    width: 20%;
+    font-size: $size5 * 0.6;
+  }
+}
+
+/*
+table {
+  text-align: left;
+  width: $width1;
+  vertical-align: top;
+  font-family: $font2;
+  font-size: $size5;
+  @media #{$tablet1} {
+    width: $width2;
+    font-size: $size5 * 0.8;
+  }
+  @media #{$tablet2} {
+    width: $width3;
+    font-size: $size5 * 0.7;
+  }
+  @media #{$mobile} {
+    width: $width4;
+    font-size: $size5 * 0.5;
+  }
+}
+
+table div {
+  background-color: $color7;
+}
+
+tr {
+  background-color: $color7;
+}
+
+td {
+  //border: 1px solid black;
+  padding: 0.5em;
+}
+*/
+
+#resume h2 {
+  color: $color6;
+  font-size: $size4;
+  @media #{$mobile} {
+    font-size: $size4 * 0.6;
   }
 }
 
