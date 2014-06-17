@@ -231,6 +231,11 @@ small {
   color: $color6;
 }
 
+small a:hover {
+  color: $color1;
+  transition: 0.3s;
+}
+
 .bumpreturn {
   font-size: $size1;
   position: fixed;
@@ -807,22 +812,23 @@ footer {
   text-align: center;
   background-color: $color7;
   border-top: 1px solid $color6;
-  @media #{$tablet2} {
-    height: 3em;
-  }
   @media #{$mobile} {
-    height: 3em;
+    height: 6em;
   }
 }
 
 footer small {
-  margin-top: 2em;
+  margin-top: 1em;
   display: block;
   @media #{$tablet2} {
     margin-top: 1em;
   }
   @media #{$mobile} {
     margin-top: 1em;
+    width: $width4;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
 

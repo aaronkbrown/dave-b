@@ -240,6 +240,10 @@ small {
   font-family: "lato", sans-serif;
   color: #606060; }
 
+small a:hover {
+  color: white;
+  transition: 0.3s; }
+
 .bumpreturn {
   font-size: 2em;
   position: fixed;
@@ -734,19 +738,19 @@ footer {
   text-align: center;
   background-color: #cccccc;
   border-top: 1px solid #606060; }
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    footer {
-      height: 3em; } }
   @media only screen and (max-width: 479px) {
     footer {
-      height: 3em; } }
+      height: 6em; } }
 
 footer small {
-  margin-top: 2em;
+  margin-top: 1em;
   display: block; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     footer small {
       margin-top: 1em; } }
   @media only screen and (max-width: 479px) {
     footer small {
-      margin-top: 1em; } }
+      margin-top: 1em;
+      width: 240px;
+      margin-left: auto;
+      margin-right: auto; } }
