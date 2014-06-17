@@ -334,11 +334,11 @@ header {
 
 header.menu {
   @media #{$tablet2} {
-    height: 8em;
+    height: 9em;
     transition: 0.3s;
   }
   @media #{$mobile} {
-    height: 8em;
+    height: 9em;
     transition: 0.3s;
   }
 }
@@ -396,11 +396,11 @@ header h1:hover {
   bottom: 0;
   height: 1.5em;
   @media #{$tablet2} {
-    top: -5em;
+    top: -6em;
     transition: 0.3s;
   }
   @media #{$mobile} {
-    top:-5em;
+    top:-6em;
     transition: 0.3s;
   }
 }
@@ -456,7 +456,7 @@ nav a{
   color: $color6;
   display: inline-block;
   text-align: center;
-  width: 24%;
+  width: 19%;
   font-weight: bold;
   //text-size: 1.5em;
   margin-top: 0.2em;

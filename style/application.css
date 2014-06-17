@@ -319,11 +319,11 @@ header {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   header.menu {
-    height: 8em;
+    height: 9em;
     transition: 0.3s; } }
 @media only screen and (max-width: 479px) {
   header.menu {
-    height: 8em;
+    height: 9em;
     transition: 0.3s; } }
 
 .name {
@@ -373,11 +373,11 @@ header h1:hover {
   height: 1.5em; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     #headerbar {
-      top: -5em;
+      top: -6em;
       transition: 0.3s; } }
   @media only screen and (max-width: 479px) {
     #headerbar {
-      top: -5em;
+      top: -6em;
       transition: 0.3s; } }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -425,7 +425,7 @@ nav a {
   color: #606060;
   display: inline-block;
   text-align: center;
-  width: 24%;
+  width: 19%;
   font-weight: bold;
   margin-top: 0.2em; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
