@@ -727,6 +727,15 @@ td {
     .link6 {
       margin-top: 1.5em; } }
 
+.link7 {
+  margin-top: 1.7em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .link7 {
+      margin-top: 0.85em; } }
+  @media only screen and (max-width: 479px) {
+    .link7 {
+      margin-top: 0.1em; } }
+
 .linkblock p {
   clear: both;
   height: auto;
