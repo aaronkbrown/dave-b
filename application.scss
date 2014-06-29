@@ -752,6 +752,16 @@ td {
 }
 
 .link2 {
+  margin-top: 1.7em;
+  @media #{$tablet2} {
+    margin-top: 1.7em * .5;
+  }
+  @media #{$mobile} {
+    margin-top: 0.1em;
+  }
+}
+
+.link3 {
   margin-top: 3.5em;
   @media #{$tablet2} {
     margin-top: 3.5em * .75;
@@ -761,7 +771,7 @@ td {
   }
 }
 
-.link3 {
+.link4 {
   margin-top: 2.3em;
   @media #{$tablet2} {
     margin-top: 2.3em * .75;
@@ -771,23 +781,13 @@ td {
   }
 }
 
-.link4 {
+.link5 {
   margin-top: 3.8em;
   @media #{$tablet2} {
     margin-top: 3.8em * .75;
   }
   @media #{$mobile} {
     margin-top: 3.8em * .35;
-  }
-}
-
-.link5 {
-  margin-top: 3em;
-  @media #{$tablet2} {
-    margin-top: 3em * .75;
-  }
-  @media #{$mobile} {
-    margin-top: 3em * .5;
   }
 }
 
@@ -802,12 +802,12 @@ td {
 }
 
 .link7 {
-  margin-top: 1.7em;
+  margin-top: 3em;
   @media #{$tablet2} {
-    margin-top: 1.7em * .5;
+    margin-top: 3em * .75;
   }
   @media #{$mobile} {
-    margin-top: 0.1em;
+    margin-top: 3em * .5;
   }
 }
 
